@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+.container{
+    position: relative;
+    background: rgb(12,0,80);
+background: linear-gradient(180deg, rgba(12,0,80,1) 39%, rgba(56,12,108,1) 100%);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.moon{
+    position: absolute;
+    top: 10%;    
+    right: 10%;
+    height: 150px;
+    width: 150px;
+    background: rgb(235, 233, 255);
+    border-radius: 50%;
+    box-shadow:
+  0px 0px 2.2px -13px rgba(255, 255, 255, 0.281),
+  0px 0px 5.4px -13px rgba(255, 255, 255, 0.404),
+  0px 0px 10.1px -13px rgba(255, 255, 255, 0.5),
+  0px 0px 18.1px -13px rgba(255, 255, 255, 0.596),
+  0px 0px 33.8px -13px rgba(255, 255, 255, 0.719),
+  0px 0px 81px -13px rgb(255, 255, 255)
+;
+
+}
+
+.moon-rock1{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    background: rgb(197, 197, 197);
+    border-radius: 46% 54% 48% 52% / 45% 41% 59% 55% ;
+}
+
+.moon-rock2{
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    background: rgb(197, 197, 197);
+    border-radius: 44% 56% 47% 53% / 56% 32% 68% 44%  ;
+}
+
+.moon-rock3{
+    position: absolute;
+    top: 60px;
+    left: 85px;
+    width: 20px;
+    height: 20px;
+    background: rgb(197, 197, 197);
+    border-radius: 61% 39% 47% 53% / 41% 53% 47% 59% ;
+}
+
+.clouds{
+    position: relative;
+    /* width: 300px; */
+    /* height: 100px; */
+    background: black;
+}
+
+.cloud1{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 150px;
+    height: 50px;
+    background: rgb(142, 195, 255);
+    border-radius: 50px;
+    animation: animate4 2s linear alternate infinite;
+}
+
+.cloud1::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: rgb(142, 195, 255);
+}
+
+.cloud1::after{
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 85px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(142, 195, 255);
+}
+
+
+.cloud2{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    width: 150px;
+    height: 50px;
+    background: rgb(142, 195, 255);
+    border-radius: 50px;
+    animation: animate2 2s linear alternate infinite;
+}
+
+.cloud2::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: rgb(142, 195, 255);
+}
+
+.cloud2::after{
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 85px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(142, 195, 255);
+}
+
+
+.cloud3{
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    width: 150px;
+    height: 50px;
+    background: rgb(142, 195, 255);
+    border-radius: 50px;
+    animation: animate2 2s linear alternate infinite;
+}
+
+.cloud3::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: rgb(142, 195, 255);
+}
+
+.cloud3::after{
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 85px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(142, 195, 255);
+}
+
+
+@keyframes animate2{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(20px);
+    }
+}
+
+
+.cloud4{
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgb(142, 195, 255);
+    animation: animate4 2s linear alternate infinite;
+}
+
+.cloud4::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: rgb(142, 195, 255);
+}
+
+.cloud4::after{
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 85px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(142, 195, 255);
+}
+
+@keyframes animate4{
+    from{
+        transform: translateY(20px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.tree-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 320px;
+    /* background: black; */
+    overflow: hidden;
+}
+
+.tree-box figure{
+    width: 120%;
+    height: 320px;
+}
+
+.coconuttree{
+    position: absolute;
+    bottom: 3px;
+    animation: tree 2s linear infinite  ;
+}
+
+@keyframes tree {
+    0%{right: -20%;}
+    10%{right: 10%;}
+    20%{right: 20%;}
+    30%{right: 30%;}
+    40%{right: 40%;}
+    50%{right: 50%;}
+    60%{right: 60%;}
+    70%{right: 70%;}
+    80%{right: 80%;}
+    90%{right: 90%;}
+    100%{right:100%;}
+}
+
+.bicycle{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    /* background: white; */
+}
+
+.man-with-bicycle{
+    position: absolute;
+    top: 0px;
+    left: 810px;
+}
+
+.first-tier{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 7px solid rgb(0, 0, 0);
+    /* margin-right: 40px; */
+}
+
+.first-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+}
+
+.first-helper1{
+    position: absolute;
+    top: -25px;
+    left: 50px;
+    width: 5px;
+    height: 73px;
+    border-radius: 10px;
+    transform-origin: bottom;
+    transform: rotate(33deg);
+    background: black;
+}
+
+.first-helper2{
+    position: absolute;
+    top: -22px;
+    left: 50px;
+    width: 5px;
+    height: 73px;
+    border-radius: 10px;
+    transform-origin: bottom;
+    transform: rotate(95deg);
+    background: black;
+}
+
+.first-tier-support1{
+    position: absolute;
+    top: 0;
+    left: 49px;
+    width: 5px;
+    height: 50%;
+    border-radius: 5px;
+    background: black;
+    transform-origin: bottom;
+        transform: rotate(0deg);
+    animation: tier .9s linear infinite;
+}
+
+@keyframes tier{
+    to{
+        transform-origin: bottom;
+        transform: rotate(-0deg);
+    }
+
+    from{
+        transform-origin: bottom;
+        transform: rotate(-360deg);
+    }
+}
+
+.first-tier-support2{
+    position: absolute;
+    top: 0;
+    left: 49px;
+    width: 5px;
+    height: 50%;
+    border-radius: 5px;
+    background: black;
+    transform-origin: bottom;
+    transform: rotate(120deg);
+    animation: tier2 .9s linear infinite;
+}
+
+@keyframes tier2{
+    to{
+        transform-origin: bottom;
+        transform: rotate(-120deg);
+    }
+
+    from{
+        transform-origin: bottom;
+        transform: rotate(-480deg);
+    }
+}
+
+.first-tier-support3{
+    position: absolute;
+    top: 0;
+    left: 49px;
+    width: 5px;
+    height: 50%;
+    border-radius: 5px;
+    background: black;
+    transform-origin: bottom;
+    transform: rotate(240deg);
+    animation: tier3 .9s linear infinite;
+}
+
+@keyframes tier3{
+    to{
+        transform-origin: bottom;
+        transform: rotate(-240deg);
+    }
+
+    from{
+        transform-origin: bottom;
+        transform: rotate(-600deg);
+    }
+}
+
+.chain-ring{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 35px;
+    border-radius: 50%;
+    background: black;
+}
+
+.chain-seat{
+    position: absolute;
+    top: -120px;
+    left: -52px;
+    width: 40px;
+    height: 30px;
+    clip-path: polygon(31% 22%, 97% 21%, 76% 64%, 13% 64%);
+    margin-bottom: 35px;
+    background: black;
+}
+
+.chain-main-rod{
+    position: absolute;
+    top: -78px;
+    left: 120px;
+    width: 8px;
+    height:140px;
+    border-radius: 10px;
+    transform-origin: top;
+    transform: rotate(80deg);
+    background: rgb(0, 0, 0);
+}
+
+.chain-helper1{
+    position: absolute;
+    top: -125px;
+    left: 15px;
+    width: 5px;
+    height:140px;
+    border-radius: 10px;
+    transform-origin: bottom;
+    transform: rotate(50deg);
+    background: rgb(0, 0, 0);
+}
+
+.chain-rod{
+    position: absolute;
+    top: -105px;
+    left: 10px;
+    width: 8px;
+    height: 120px;
+    border-radius: 10px;
+    transform-origin: bottom;
+    transform: rotate(-23deg);
+    background: black;
+}
+
+.second-tier{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 7px solid black;
+    margin-left: 70px;
+}
+
+.second-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+}
+
+.second-rod{
+    position: absolute;
+    top: -70px;
+    width: 8px;
+    height: 120px;
+    border-radius: 10px;
+    background: black;
+    transform-origin: bottom;
+    transform: rotate(-20deg);
+}
+
+.second-handle-rod{
+    position: absolute;
+    top: -65px;
+    left: 10px;
+    width: 20px;
+    height: 3px;
+    transform-origin: bottom;
+    transform: rotate(-15deg);
+    background: black;
+}
+
+.second-handle{
+    position: absolute;
+    top: -73px;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: black;
+}
+
+.second-tier-support1{
+    position: absolute;
+    top: 0;
+    left: 49px;
+    width: 5px;
+    height: 50%;
+    border-radius: 5px;
+    background: black;
+    transform-origin: bottom;
+        transform: rotate(0deg);
+    animation: tier .9s linear infinite;
+}
+
+@keyframes tier{
+    to{
+        transform-origin: bottom;
+        transform: rotate(-0deg);
+    }
+
+    from{
+        transform-origin: bottom;
+        transform: rotate(-360deg);
+    }
+}
+
+.second-tier-support2{
+    position: absolute;
+    top: 0;
+    left: 49px;
+    width: 5px;
+    height: 50%;
+    border-radius: 5px;
+    background: black;
+    transform-origin: bottom;
+    transform: rotate(120deg);
+    animation: tier2 .9s linear infinite;
+}
+
+@keyframes tier2{
+    to{
+        transform-origin: bottom;
+        transform: rotate(-120deg);
+    }
+
+    from{
+        transform-origin: bottom;
+        transform: rotate(-480deg);
+    }
+}
+
+.second-tier-support3{
+    position: absolute;
+    top: 0;
+    left: 49px;
+    width: 5px;
+    height: 50%;
+    border-radius: 5px;
+    background: black;
+    transform-origin: bottom;
+    transform: rotate(240deg);
+    animation: tier3 .9s linear infinite;
+}
+
+@keyframes tier3{
+    to{
+        transform-origin: bottom;
+        transform: rotate(-240deg);
+    }
+
+    from{
+        transform-origin: bottom;
+        transform: rotate(-600deg);
+    }
+}
+
+.land{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+    background: black;
+}
